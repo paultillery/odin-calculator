@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!--Full Calc Container-->
+    <div id="full-calc-container">
+        
+        <!--Buttons and Screen-->
+        <div id="buttons-and-screen-container">
+
+            <!--Screen-->
+            <div id="screen">
+                <div id="screenText">0</div>
+            </div>
+
+            <!--Buttons Container-->
+            <div id="buttons-container">
+                
+                <!--Button Column 1 (Editing, Numbers, Equals)-->
+                <div id="buttons-column-1">
+
+                    <!--Editing-->
+                    <div id="buttons-editing">
+                        <button id="button-clear" data-eCode="KeyC">C</button>
+                        <button id="button-backspace" data-eCode="Backspace Delete">⌫</button>
+                    </div>
+
+                    <!--Numbers and Equals-->
+                    <div id="buttons-numbers">
+
+                        <!--Row 1-->
+                        <div>
+                            <button id="button-7" class="num-button" data-eCode="Digit7">7</button>
+                            <button id="button-8" class="num-button" data-eCode="Digit8">8</button>
+                            <button id="button-9" class="num-button" data-eCode="Digit9">9</button>
+                        </div>
+
+                        <!--Row 2-->
+                        <div>
+                            <button id="button-4" class="num-button" data-eCode="Digit4">4</button>
+                            <button id="button-5" class="num-button" data-eCode="Digit5">5</button>
+                            <button id="button-6" class="num-button" data-eCode="Digit6">6</button>
+                        </div>
+
+                        <!--Row 3-->
+                        <div>
+                            <button id="button-1" class="num-button" data-eCode="Digit1">1</button>
+                            <button id="button-2" class="num-button" data-eCode="Digit2">2</button>
+                            <button id="button-3" class="num-button" data-eCode="Digit3">3</button>
+                        </div>
+
+                        <!--Row 4-->
+                        <div>
+                            <button id="button-0" class="num-button" data-eCode="Digit0">0</button>
+                            <button id="button-decimal" data-eCode="Period">.</button>
+                            <button id="button-equals" class="operator" data-eCode="Equal Enter">=</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Button Column 2 (Operators)-->
+                <!--Trying to use "data-mode" to consolidate variable declarations-->
+                <div id="buttons-column-2">
+                    <button id="button-exponent" class="operator mode-button" data-mode="exponent">^</button>
+                    <button id="button-divide" class="operator mode-button" data-mode="divide" data-eCode="Slash">÷</button>
+                    <button id="button-multiply" class="operator mode-button" data-mode="multiply" data-eCode="KeyX">×</button>
+                    <button id="button-subtract" class="operator mode-button" data-mode="subtract" data-eCode="Minus">-</button>
+                    <button id="button-add" class="operator mode-button" data-mode="add">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

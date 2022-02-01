@@ -1,0 +1,120 @@
+/* Body */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex; /* for centering */
+    background-color: black;
+}
+
+/* Containers, Columns */
+
+#full-calc-container {
+    background-image: linear-gradient(
+        20deg, rgb(30,30,30), rgb(60,60,60));
+    border-radius: 12px;
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    box-shadow: inset 0px 0px 7px rgba(255,255,255,0.1);
+}
+
+#buttons-container {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: auto;
+}
+
+#buttons-column-1 {
+    width: fit-content;
+    height: fit-content;
+}
+
+#buttons-column-2 {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* Screen, Buttons */
+
+#buttons-and-screen-container {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+#screen {
+    width: 190px;
+    height: 40px;
+    background-color: rgb(150, 150, 150);
+    margin: 25px 5px 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: inset 0px 20px 1px rgba(0,0,0,0.1);
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(50,50,50);
+    text-align: right;
+}
+
+button {
+    float: left; /* removes non-margin whitespace */
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    background-image: linear-gradient(
+        10deg, rgb(160,160,160), rgb(220,220,220));
+}
+button.lit, button:hover {
+    background-image: linear-gradient(
+        10deg, rgb(200,200,200), rgb(255,255,255));
+    box-shadow: 0px 0px 8px rgba(255,255,255,0.5);
+}
+button.pressed, button:active {
+    background-image: linear-gradient(
+        10deg, rgb(180,180,180), rgb(155,155,155));
+    box-shadow: none;
+}
+
+#buttons-editing button {
+    color: rgb(220,220,220);
+    background-image: linear-gradient(
+        10deg, rgb(100,100,100), rgb(155,155,155));
+}
+#buttons-editing button.lit, button:hover {
+    background-image: linear-gradient(
+        10deg, rgb(120,120,120), rgb(180,180,180));
+    box-shadow: 0px 0px 8px rgba(255,255,255,0.25);
+}
+#buttons-editing.pressed, #buttons-editing:active {
+    background-image: linear-gradient(
+        10deg, rgb(120,120,120), rgb(100,100,100));
+    box-shadow: none;
+}
+
+button.operator {
+    background-image: linear-gradient(
+        10deg, rgb(245,115,0), orange);
+}
+button.operator.lit, button.operator:hover {
+    background-image: linear-gradient(
+        10deg, rgb(255,135,10), rgb(255,200,30));
+    box-shadow: 0px 0px 8px rgba(255,100,0,0.75);
+}
+button.operator.pressed, button.operator:active {
+    background-image: linear-gradient(
+        10deg, rgb(255,125,0), rgb(235,120,0));
+    box-shadow: none;
+}
+
+#button-clear {
+    width: 90px;
+}
